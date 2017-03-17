@@ -1,12 +1,146 @@
+@font-face {
+  font-family: supermarket;
+  src: url("../fonts/supermarket/supermarket.ttf"); }
 body {
   background-color: #000;
   color: #FFF;
+  font-family: supermarket;
   overflow-x: hidden; }
+
+header .header-bg {
+  background-image: url("../../images/header-bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 15px 0px; }
+
+.navbar {
+  border-radius: 0px;
+  min-height: 40px; }
+
+.navbar-default {
+  background-color: #059ee5;
+  border: 0px;
+  border-bottom: 2px solid #FFF; }
+
+.nav > li > a {
+  padding: 10px 33px; }
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.navbar-default .navbar-nav > li > a {
+  color: #FFF;
+  font-size: 19px; }
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #FFF;
+  background-color: #ec008c; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #FFF;
+  background-color: #ec008c; }
 
 .clinic-site .full-bleed-section {
   margin-left: -10000px;
   margin-right: -10000px;
   padding-left: 10000px;
   padding-right: 10000px; }
+
+.promotion-bg {
+  background-image: url("../../images/bg-vg.png"), url("../../images/bg-pro.jpg");
+  background-repeat: no-repeat, repeat-x;
+  background-position: center top, left top;
+  background-size: auto 100%, auto 100%; }
+
+h1.title {
+  text-align: center; }
+  h1.title small {
+    color: #FFF;
+    display: block;
+    font-weight: normal;
+    line-height: 1; }
+
+.thumbnail {
+  position: relative; }
+  .thumbnail .thum-title {
+    background-color: rgba(36, 133, 214, 0.85);
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+    .thumbnail .thum-title small {
+      display: block;
+      color: #000;
+      font-size: 16px;
+      line-height: 22px; }
+
+.thumbnail-color {
+  background-color: #9a7016;
+  border: 1px solid #9a7016;
+  margin-bottom: 5px;
+  margin-top: 15px; }
+
+.thumbnail-text {
+  color: #fe14a6;
+  text-align: center; }
+
+.btn-header {
+  background: #e2ab4d;
+  background: -moz-linear-gradient(left, #e2ab4d 0%, #977642 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #e2ab4d), color-stop(100%, #977642));
+  background: -webkit-linear-gradient(left, #e2ab4d 0%, #977642 100%);
+  background: -o-linear-gradient(left, #e2ab4d 0%, #977642 100%);
+  background: -ms-linear-gradient(left, #e2ab4d 0%, #977642 100%);
+  background: linear-gradient(to right, #e2ab4d 0%, #977642 100%);
+  border-radius: 35px;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2ab4d', endColorstr='#977642', GradientType=1 );
+  font-size: 17px; }
+
+.btn-readmore {
+  background-color: #FFF;
+  border: 1px solid #e2ac66;
+  border-radius: 12px;
+  color: #000;
+  font-size: 18px;
+  margin: 15px 0px; }
+
+.readmore {
+  border: 2px solid #e2ac66;
+  border-radius: 15px;
+  color: #e2ac66;
+  font-size: 14px;
+  padding: 1px; }
+
+.mg-t15 {
+  margin-top: 20px; }
+
+footer {
+  background-color: #efefef;
+  color: #2b2b2b;
+  margin-top: 30px;
+  padding: 15px 0px; }
+  footer h3 {
+    color: #26b6fc; }
+  footer .myhr {
+    background: #e2ac50;
+    background: -moz-linear-gradient(left, #e2ac50 0%, #e2ac50 72%, #977642 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #e2ac50), color-stop(72%, #e2ac50), color-stop(100%, #977642));
+    background: -webkit-linear-gradient(left, #e2ac50 0%, #e2ac50 72%, #977642 100%);
+    background: -o-linear-gradient(left, #e2ac50 0%, #e2ac50 72%, #977642 100%);
+    background: -ms-linear-gradient(left, #e2ac50 0%, #e2ac50 72%, #977642 100%);
+    background: linear-gradient(to right, #e2ac50 0%, #e2ac50 72%, #977642 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2ac50', endColorstr='#977642', GradientType=1 );
+    margin-bottom: 15px;
+    height: 2px; }
+  footer address {
+    font-size: 18px; }
+
+.glycolor {
+  color: #00bff3; }
 
 /*# sourceMappingURL=app.css.map */

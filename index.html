@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Carekoon Clinic</title>
     <!-- Bootstrap -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,11 +20,19 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container header-bg">
             <div class="row">
-                <div class="col-md-7">Logo</div>
-                <div class="col-md-5">
-                    <button type="button" class="btn btn-primary">Primary</button>
+                <div class="col-md-7">
+                    <a href="index.html"><img src="images/logo-text.png" alt="Carekoon Clinic My Logo"></a>
+                </div>
+                <div class="col-md-5 text-right">
+                    <span class="btn btn-header"> เบอร์โทรศัพท์ : 084-372-2437 , 085-7097-772 </span>
+                    <ul class="list-inline mg-t15">
+                        <li><a href="#"><img src="images/icon-line.png" alt=""></a></li>
+                        <li>Id : ammy_sugery , id : surgery.cr</li>
+                        <li><a href="#"><img src="images/icon-facebook.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/icon-ins.png" alt=""></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -39,25 +47,20 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Brand</a>
+                <!-- <a class="navbar-brand" href="#">Brand</a> -->
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Link</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="#">หน้าแรก</a></li>
+                    <li><a href="#">เกี่ยวกับแพทย์</a></li>
+                    <li><a href="#">โปรโมชั่น</a></li>
+                    <li><a href="#">ผลงานของเรา</a></li>
+                    <li><a href="#">ราคา</a></li>
+                    <li><a href="#">วิดีโอ</a></li>
+                    <li><a href="#">รู้ก่อนศัลฯ</a></li>
+                    <li><a href="#">จองคิว</a></li>
+                    <li><a href="#">ติดต่อเรา</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -68,36 +71,102 @@
 
     <div class="container clinic-site">
         <div class="slide-intro">
-            clinic site
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/slide1.jpg" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="images/slide1.jpg" alt="...">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <section class="promotion-section">
-            promotion
+            <h1 class="title">Promotion<small>โปรโมชั่น</small></h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail thumbnail-color">
+                        <a href="#"><img src="images/cover1.jpg" alt="..."></a>
+                    </div>
+                    <h4 class="thumbnail-text">ลบริ้วรอย ปรับรูปหน้า ล๊อกหน้าเรียว </h4>
+                </div>
+            </div>
+
         </section>
 
-        <section class="full-bleed-section">
-            <h1>ผลงานที่ผ่านมา</h1>
+        <section class="full-bleed-section promotion-bg">
+            <h1 class="title">Promotion<small>โปรโมชั่น</small></h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a href="#"><img src="images/cover2.jpg" alt="..."></a>
+                        <div class="thum-title">
+                            <h4> เสริมหน้าอก 400 cc. <small>นางแบบผู้ใช้บริการจริง  2017</small></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button type="button" class="btn btn-readmore">
+                    <span class="readmore glyphicon glyphicon-chevron-right"></span> ดูผลงานเพิ่มเติม
+                </button>
+            </div>
         </section>
 
         <section class="vidio-section">
-            <h1>วีดิโอ</h1>
+            <h1 class="title">Promotion<small>โปรโมชั่น</small></h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail thumbnail-color">
+                        <a href="#"><img src="images/cover1.jpg" alt="..."></a>
+                    </div>
+                    <h4><span class="glycolor glyphicon glyphicon-play"></span> ลบริ้วรอย ปรับรูปหน้า ล๊อกหน้าเรียว </h4>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button type="button" class="btn btn-readmore">
+                    <span class="readmore glyphicon glyphicon-chevron-right"></span> ดูผลงานเพิ่มเติม
+                </button>
+            </div>
         </section>
     </div>
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-2">1</div>
-                <div class="col-md-6">2</div>
-                <div class="col-md-4">3</div>
+                <div class="col-md-2"><a href="#"><img class="img-responsive" src="images/logo.png" alt=""></a></div>
+                <div class="col-md-6 text-center">
+                    <h3>Carkoon Clinic  แคร์คุณ คลีนิด</h3>
+                    <div class="myhr"></div>
+                    <address>
+                        ที่อยู่ : อ.แม่จัน จ.เชียงราย <br>
+                        เบอร์โทรศัพท์ : 084-372-2437 , 085-7097-772 <br>
+                        อีเมลล์ : chatree.surgery@gmail.com  ไอจี : dr.chatree_surgeryclinic
+                    </address>
+                </div>
+                <div class="col-md-4 text-center">
+                    <br>
+                    <img src="images/code-line.jpg" alt="">&nbsp;
+                    <img src="images/code-line.jpg" alt="">
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 
