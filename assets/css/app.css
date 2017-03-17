@@ -1,0 +1,12 @@
+body {
+  background-color: #000;
+  color: #FFF;
+  overflow-x: hidden; }
+
+.clinic-site .full-bleed-section {
+  margin-left: -10000px;
+  margin-right: -10000px;
+  padding-left: 10000px;
+  padding-right: 10000px; }
+
+/*# sourceMappingURL=app.css.map */
