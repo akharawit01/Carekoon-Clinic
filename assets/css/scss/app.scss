@@ -11,6 +11,15 @@ body {
 
 }
 
+.clr-pink {
+	color: #ff00a2;
+}
+.clr-brown {
+	color: #49361c;
+}
+.clr-blue {
+	color: #22b0f1;
+}
 
 
 header {
@@ -70,15 +79,80 @@ header {
 }
 
 h1.title {
+	position: relative;
 	text-align: center;
+	text-transform: uppercase;
+	z-index: 1;
 	
 	small {
 		color: #FFF;
 		display: block;
+		font-size: 18px;
 		font-weight: normal;
 	    line-height: 1;
 	}
 
+	&:before {
+        border-top: 2px solid #dfdfdf;
+	    content: "";
+	    margin: 0 auto;
+	    position: absolute;
+	    top: 50%;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    width: 70%;
+	    z-index: -1;
+    }
+
+    span { 
+        background: #000; 
+        padding: 0 30px; 
+    }
+
+    span.left-dot {
+    	display: block;
+	    background: #fff;
+	    border: 1px solid #f36005;
+	    height: 10px;
+	    position: absolute;
+	    top: 44%;
+	    width: 10px;
+	    -webkit-border-radius: 100% 100% 100% 100%;
+	    -moz-border-radius: 100% 100% 100% 100%;
+	    border-radius: 100% 100% 100% 100%;
+	    padding: 0px;
+	    left: 170px;
+    }
+    span.right-dot {
+    	display: block;
+	    background: #fff;
+	    border: 1px solid #f36005;
+	    height: 10px;
+	    position: absolute;
+	    top: 44%;
+	    width: 10px;
+	    -webkit-border-radius: 100% 100% 100% 100%;
+	    -moz-border-radius: 100% 100% 100% 100%;
+	    border-radius: 100% 100% 100% 100%;
+	    padding: 0px;
+	    right: 170px;
+    }
+
+}
+
+
+h2 {
+    font: 33px sans-serif;
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+
+h2.double:before { 
+    /* this is just to undo the :before styling from above */
+    border-top: none; 
 }
 
 .thumbnail {
