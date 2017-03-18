@@ -11,6 +11,13 @@ body {
 
 }
 
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
 .clr-pink {
 	color: #ff00a2;
 }
@@ -78,7 +85,21 @@ header {
     background-size: auto 100%, auto 100%;
 }
 
+
+h1.origi-title {
+	padding-top: 30px;
+	text-align: center;
+	small {
+		color: #FFF;
+		display: block;
+		font-size: 18px;
+		font-weight: normal;
+	    line-height: 1;
+	}
+
+}
 h1.title {
+	margin-top: 60px;
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
@@ -93,7 +114,7 @@ h1.title {
 	}
 
 	&:before {
-        border-top: 2px solid #dfdfdf;
+        border-top: 2px solid #9f7c48;
 	    content: "";
 	    margin: 0 auto;
 	    position: absolute;
@@ -112,8 +133,8 @@ h1.title {
 
     span.left-dot {
     	display: block;
-	    background: #fff;
-	    border: 1px solid #f36005;
+	    background: #000;
+	    border: 1px solid #9f7c48;
 	    height: 10px;
 	    position: absolute;
 	    top: 44%;
@@ -126,8 +147,8 @@ h1.title {
     }
     span.right-dot {
     	display: block;
-	    background: #fff;
-	    border: 1px solid #f36005;
+	    background: #000;
+	    border: 1px solid #9f7c48;
 	    height: 10px;
 	    position: absolute;
 	    top: 44%;
@@ -254,3 +275,7 @@ footer {
 .glycolor {
 	color: #00bff3;
 }
+
+
+
+
