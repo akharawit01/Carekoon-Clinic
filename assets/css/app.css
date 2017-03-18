@@ -7,6 +7,9 @@ body {
   font-family: supermarket;
   overflow-x: hidden; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: supermarket !important; }
+
 #nav.affix {
   position: fixed;
   top: 0;
@@ -21,6 +24,9 @@ body {
 
 .clr-blue {
   color: #22b0f1; }
+
+.font-9 {
+  font-size: 9px; }
 
 header .header-bg {
   background-image: url("../../images/header-bg.png");
@@ -38,7 +44,9 @@ header .header-bg {
   border-bottom: 2px solid #FFF; }
 
 .nav > li > a {
-  padding: 10px 33px; }
+  padding: 10px 33px;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; }
 
 .navbar-nav > li > a {
   padding-top: 10px;
@@ -143,6 +151,10 @@ h2.double:before {
   /* this is just to undo the :before styling from above */
   border-top: none; }
 
+.sub-title {
+  color: #64e75b;
+  text-align: center; }
+
 .thumbnail {
   position: relative; }
   .thumbnail .thum-title {
@@ -186,7 +198,16 @@ h2.double:before {
   border-radius: 12px;
   color: #000;
   font-size: 18px;
-  margin: 15px 0px; }
+  margin: 15px 0px;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s; }
+  .btn-readmore:hover {
+    background-color: #000;
+    border: 1px solid #e2ac66;
+    color: #e1ab66; }
+
+.btn-service {
+  background-color: #f36d50; }
 
 .readmore {
   border: 2px solid #e2ac66;
@@ -221,5 +242,39 @@ footer {
 
 .glycolor {
   color: #00bff3; }
+
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > td,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th {
+  border: 2px solid #000; }
+
+.table-service {
+  font-size: 16px; }
+  .table-service thead tr > th {
+    text-align: center; }
+  .table-service thead tr > th:nth-child(1) {
+    background-color: #069fe5;
+    color: #FFF; }
+  .table-service thead tr > th:nth-child(2) {
+    background-color: #ed008c;
+    color: #FFF; }
+  .table-service tbody tr > td:nth-child(2) {
+    text-align: right; }
+  .table-service td[colspan="2"] {
+    background-color: #d4f3ad;
+    color: #000; }
+  .table-service td {
+    background-color: #FFF;
+    color: #000; }
+
+select.inp-maxwidth {
+  max-width: 320px;
+  margin: 0 auto; }
+
+.form-horizontal .control-label {
+  font-size: 16px; }
 
 /*# sourceMappingURL=app.css.map */
